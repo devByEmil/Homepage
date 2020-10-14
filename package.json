@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss css/style.css -w",
+    "compile_sass": "node-sass sass/main.scss css/style_compiled.css",
+    "prefix_css": "npx postcss css/style_compiled.css --use autoprefixer -o css/style_prefixed.css",
+    "compress_css": "node-sass css/style_prefixed.css css/style.css --output-style compressed",
+    "build_css": "npm run compile_sass && npm run prefix_css && npm run compress_css"
+  },
+  "author": "Emil Raedsch",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.8.5",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^7.1.1"
+  }
+}

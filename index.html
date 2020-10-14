@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Emil Raedsch">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Dev by Emil | Programming and Webdevelopment</title>
+
+    <!--Close Navigation when link is clicked-->
+    <script type="text/JavaScript">
+        function closeNavigation () {
+            document.getElementById("navigation__checkbox").checked = false;
+        }
+   </script>
+
+</head>
+<body>
+    <!-- Background Image -->
+    <div class="bgimage"></div>
+
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navigation__checkbox">
+        <label for="navigation__checkbox" class="navigation__label">
+            <span class="navigation__label__span"></span>
+        </label>
+        <div class="navigation__background"></div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link" onclick="closeNavigation()">Home</a></li>
+                <li class="navigation__item"><a href="#webdev" class="navigation__link" onclick="closeNavigation()">Webdevelopment</a></li>
+                <li class="navigation__item"><a href="#prog" class="navigation__link" onclick="closeNavigation()">Programming</a></li>
+                <li class="navigation__item"><a href="#contact" class="navigation__link" onclick="closeNavigation()">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header class="header">
+        <div class="header__text-box-wrapper">
+            <div class="header__heading">
+                <h1 class="header__heading--max">Hi! I am Emil.</h1>
+                <h2 class="header__heading--min">I do webdevelopment and programming.</h2>
+            </div>
+            <a href="/sample webpages/snake/index.html" class="header__button button--big" target="_blank">Bored? Click me!</a>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="section-webdev" id="webdev">
+            <h3 class="heading-webdev">Webdevelopment</h3>
+            <div class="section-webdev__grid-wrapper">
+                <div class="webdev__card section-webdev__card-1">
+                    <div class="webdev__card-front">
+                        <img src="/img/natours-screenshot.JPG" alt="Webpage Example" class="webdev__card-front-img">
+                        <h4 class="webdev__card-front-heading webdev__card-front-heading-1">Natours</h4>
+                        <p class="webdev__card-front-text">This is a landing page for a hiking company called natours. The design was created by Jonas Schmedtmann for his Udemy CSS course. I built it in order of his course.</p>
+                    </div>
+                    <div class="webdev__card-back">
+                        <a href="./sample webpages/natours/index.html" class="webdev__card-back__button button--card" target="_blank">Check me out!</a>
+                    </div>
+                </div>
+
+                <div class="webdev__card section-webdev__card-2">
+                    <div class="webdev__card-front">
+                        <img src="/img/forkify-screenshot.JPG" alt="Webpage Example" class="webdev__card-front-img">
+                        <h4 class="webdev__card-front-heading webdev__card-front-heading-2">Forkify</h4>
+                        <p class="webdev__card-front-text">A website about recepts, also designed by Jonas Schmedtmann. The page is not responsive, but rather to show some JavaScript.</p>
+                    </div>
+                    <div class="webdev__card-back">
+                        <a href="./sample webpages/forkify/dist/index.html" class="webdev__card-back__button button--card" target="_blank">Check me out!</a>
+                    </div>
+                </div>
+
+                <div class="webdev__card section-webdev__card-3">
+                    <div class="webdev__card-front">
+                        <img src="./img/test-pattern.png" alt="Webpage Example" class="webdev__card-front-img">
+                        <h4 class="webdev__card-front-heading webdev__card-front-heading-3">Custom Page</h4>
+                        <p class="webdev__card-front-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis eligendi dolore laboriosam necessitatibus fuga laborum, modi, possimus.</p>
+                    </div>
+                    <div class="webdev__card-back">
+                        <a href="#" class="webdev__card-back__button button--card" target="_blank">Work in Progress</a>
+                    </div>
+                </div>
+
+                <div class="webdev__card section-webdev__card-4">
+                    <div class="webdev__card-front">
+                        <img src="./img/test-pattern.png" alt="Webpage Example" class="webdev__card-front-img">
+                        <h4 class="webdev__card-front-heading webdev__card-front-heading-4">Wordpress Page</h4>
+                        <p class="webdev__card-front-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis eligendi dolore laboriosam necessitatibus fuga laborum, modi, possimus.</p>
+                    </div>
+                    <div class="webdev__card-back">
+                        <a href="#" class="webdev__card-back__button button--card" target="_blank">Work in Progress</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-webdev__cta cta">
+                <div class="cta__button-box">
+                    <a href="https://www.fiverr.com/quietsea03/edit-fix-improve-compress-your-html-and-css-website" class="cta__button button--cta" target="_blank" rel="noopener noreferrer">Check out my Fiverr Gigs</a>
+                </div>
+                <div class="cta__text-box">
+                    <h2 class="cta__text">Want me to work on your website?</h2>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section-prog" id="prog">
+            <h3 class="heading-prog">Programming</h3>
+            <div class="section-prog__grid-wrapper">
+
+                <div class="prog-card">
+                    <div class="prog-card--front">
+                        <div class="prog-card--front__image prog-card--front__image-1"></div>
+                        <p class="prog-card--front__text">
+                            JavaScript
+                        </p>
+                    </div>
+                    <div class="prog-card--back">
+                        <a href="/sample webpages/snake/index.html" class="prog-card--back__button button--card button--card--prog" target="_blank">Snake Game</a>
+                    </div>
+                </div>
+
+                <div class="prog-card">
+                    <div class="prog-card--front">
+                        <div class="prog-card--front__image prog-card--front__image-2"></div>
+                        <p class="prog-card--front__text">
+                            Apps
+                        </p>
+                    </div>
+                    <div class="prog-card--back">
+                        <p class="card--wip">Work in Progress</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="contact">
+            <h2 class="contact__heading">Want to get in touch?</h2>
+            <a href="mailto:devByEmil@t-online.de" class="contact__button button--cta" target="_blank">Write an E-Mail!</a>
+        </div>
+        <div class="legal-stuff">
+            <ul class="legal-stuff__list">
+                <li class="legal-stuff__item"><a href="#popup--about-me" class="legal-stuff__link">About Me</a></li> |
+                <li class="legal-stuff__item"><a href="#popup--credits" class="legal-stuff__link">Credits</a></li> |
+                <li class="legal-stuff__item"><a href="#popup--impressum" class="legal-stuff__link">Legal Notice</a></li> |
+                <li class="legal-stuff__item"><a href="/gdpr/privacy-notice.pdf" class="legal-stuff__link" download>Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">&copy; 2020 Emil Rädsch</p>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup--about-me">
+        <div class="popup__box">
+            <h3 class="popup__heading">About Me</h3>
+            <div class="popup__textbox">
+                <p class="popup__text">
+                    Hi!<br /><br />My name is Emil, I am a 17 year old boy from germany, currently in 12th grade. I started learning programming and building Websites a few years ago. If you want me to build you a lovely website, I would love to hear from you! I will work side by side with you to make a nice design for your Website and then put it in reality.<br /><br />If you have any questions, feel free to ask!
+                </p>
+            </div>
+            <a href="#footer" class="popup__button-close">
+                <span class="popup__button-close__span"></span>
+            </a>
+        </div>
+    </div>
+    <div class="popup" id="popup--credits">
+        <div class="popup__box">
+            <h3 class="popup__heading">Credits</h3>
+            <div class="popup__textbox">
+                <p class="popup__text">
+                    I have built this page with pure HTML, CSS(SASS/SCSS) and JavaScript - no CMS.<br /><br />
+                    Pictures (Background of webpage and programming cards):<br />
+                    By Markus Spiske from Pixabay<br /><br />
+                    Pictures (Test-screen):<br />
+                    By OpenClipart-Vectors from Pixabay<br /><br />
+                </p>
+            </div>
+            <a href="#footer" class="popup__button-close">
+                <span class="popup__button-close__span"></span>
+            </a>
+        </div>
+    </div>
+    <div class="popup" id="popup--impressum">
+        <div class="popup__box">
+            <h3 class="popup__heading">Legal notice<span class="popup__heading__span">Information according to §5 TMG</span></h3>
+            <div class="popup__textbox popup__textbox--impressum">
+                <ul class="popup--impressum__list popup--impressum__list--contact">
+                    <li class="popup--impressum__list__item">Emil Rädsch</li>
+                    <li class="popup--impressum__list__item">Development Emil Rädsch</li>
+                    <li class="popup--impressum__list__item">Seppl-Herberger-Weg 2</li>
+                    <li class="popup--impressum__list__item">63322 Rödermark, Deutschland</li>
+                    <li class="popup--impressum__list__item">E-Mail: devByEmil@t-online.de</li>
+                </ul>
+                <ul class="popup--impressum__list popup--impressum__list--right">
+                    <!--<li class="popup--impressum__list__item">Sales-tax-ID: DE 999 999 999</li>-->
+                    <li class="popup--impressum__list__item"><a href="https://ec.europa.eu/consumers/odr" target="_blank">EU Dispute Settlement</a></li>
+                </ul>
+            </div>
+            <a href="#footer" class="popup__button-close">
+                <span class="popup__button-close__span"></span>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
