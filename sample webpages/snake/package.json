@@ -1,0 +1,17 @@
+{
+  "name": "snake",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prefix_css": "postcss --use autoprefixer -b \"last 10 versions\" css/style.css -o css/style.prefix.css",
+    "compress_css": "node-sass css/style.prefix.css css/style.publish.css --output-style compressed"
+  },
+  "author": "Emil Raedsch",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.0.1",
+    "node-sass": "^4.14.1",
+    "postcss-cli": "^8.1.0"
+  }
+}

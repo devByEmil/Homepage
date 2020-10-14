@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: grey;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+.game-board {
+    height: 100vmin;
+    width: 100vmin;
+    background-color: white;
+    display: grid;
+    grid-template-rows: repeat(21, 1fr);
+    grid-template-columns: repeat(21, 1fr);
+}
+
+.snake {
+    background-color: lightgreen;
+    border: .25vmin solid black;
+}
+
+.food {
+    background-color: orangered;
+    border: .25vmin solid black;
+}
+
+.mobile-arrow-buttons {
+    position: fixed;
+    bottom: 12.5px;
+    width: 50%;
+    height: 100px;
+    display: none;
+}
+.button {
+    width: 33.33333333%;
+    height: 50%; 
+    background-color: grey;
+    float: left;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: .75px solid white;
+    border-radius: 15px;
+    font-size: 20px;
+}
+.button--up {
+    width: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+    .mobile-arrow-buttons {
+        display: block;
+    }
+}
